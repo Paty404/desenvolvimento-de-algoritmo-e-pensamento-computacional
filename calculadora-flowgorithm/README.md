@@ -6,7 +6,7 @@
 
 ---
 
-## Descrição resumida do funcionamento
+## Descrição do funcionamento
 
 O programa apresenta um menu com 20 opções numeradas. O usuário digita o número correspondente à operação desejada e, em seguida, fornece os valores necessários para o cálculo. Cada opção executa uma operação matemática, geométrica, de conversão ou de saúde, exibindo o resultado na tela. O fluxo é controlado por estruturas condicionais aninhadas (`if` / `else`), característica do ambiente Flowgorithm.
 
