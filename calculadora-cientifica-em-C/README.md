@@ -4,7 +4,7 @@
 Calculadora interativa com 20 operações matemáticas, desenvolvida em C para fins acadêmicos. O programa exibe um menu numerado, lê a opção e os números necessários, executa o cálculo e exibe o resultado, permitindo repetir ou encerrar a interação.
 
 ## Objetivo da calculadora
-Oferecer uma ferramenta prática para cálculos variados e, principalmente, consolidar o aprendizado de C – manipulação de entrada/saída, estruturas de controle, repetição e uso da biblioteca matemática <math.h>.
+Oferecer uma ferramenta prática para cálculos variados e, principalmente, consolidar o aprendizado de C (manipulação de entrada/saída, estruturas de controle, repetição e uso da biblioteca matemática <math.h>).
 
 ## Funcionalidades implementadas (20 operações)
 1. Soma  
