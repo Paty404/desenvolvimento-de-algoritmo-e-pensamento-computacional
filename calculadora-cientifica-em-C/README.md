@@ -18,12 +18,12 @@ Oferecer uma ferramenta prática para cálculos variados e, principalmente, cons
 9. Log natural (exige número > 0)  
 10. Log na base 10 (exige número > 0)  
 11. Média aritmética  
-12. Média ponderada (pesos 2 e 3)  
+12. Média ponderada
 13. Elevar ao quadrado  
 14. Elevar ao cubo  
 15. Hipotenusa
 16. Raiz cúbica 
-17. Fatorial (valida inteiro não negativo)  
+17. Fatorial
 18. Seno (rad)  
 19. Cosseno (rad)  
 20. Tangente (rad)
