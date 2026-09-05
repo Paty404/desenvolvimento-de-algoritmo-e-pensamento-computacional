@@ -1,7 +1,7 @@
 # Calculadora Flowgorithm
 
 **Título da atividade:** Calculadora Flowgorithm  
-**Nome do aluno(a):** Patrícia Liane  
+**Nome da aluna:** Patrícia Liane  
 **Objetivo do programa:** Este projeto tem finalidade acadêmica, visando a prática de lógica de programação e o desenvolvimento de um algoritmo estruturado que implementa uma calculadora com múltiplas funcionalidades, utilizando a ferramenta Flowgorithm.
 
 ---
