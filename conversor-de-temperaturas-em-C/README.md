@@ -33,7 +33,7 @@ Com essas seis opções, você cobre praticamente todas as necessidades do dia a
 
 ## Instruções para execução
 
-Rodar esse programa é bem tranquilo. Você vai precisar de qualquer compilador de C instalado na sua máquina.
+Para rodar esse programa, você vai precisar de qualquer compilador de C instalado na sua máquina.
 
 Siga o passo a passo:
 
