@@ -41,7 +41,7 @@ Siga o passo a passo:
 
 2. Abra o terminal (ou Prompt de Comando no Windows) e navegue até a pasta onde você salvou o arquivo.
 
-3. Compile o programa usando o comando abaixo. Lembre-se de incluir a flag -lm, pois utilizamos a biblioteca matemática para algumas operações:
+3. Compile o programa usando o comando abaixo. Lembre-se de incluir a flag -lm, pois foi utilizado a biblioteca matemática para algumas operações:
 
    gcc conversor.c -o conversor -lm
 
