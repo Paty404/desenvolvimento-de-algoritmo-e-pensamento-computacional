@@ -54,5 +54,6 @@ Siga o passo a passo:
 
 ---
 
-Identificação da estudante: Patrícia Liane, Graduanda em Ciência da Computação
+**Identificação da estudante:** Patrícia Liane, Graduanda em Ciência da Computação
+
 Trabalho acadêmico desenvolvido na disciplina _Algoritmos e Pensamento Coputacional_ com o objetivo não apenas de obter o valor convertido, mas compreender como uma decisão do usuário pode direcionar diferentes operações dentro de um algoritmo utilizando switch...case.
