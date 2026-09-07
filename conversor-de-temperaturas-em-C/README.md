@@ -27,8 +27,7 @@ O programa atende todas as combinações diretas entre as três escalas mais usa
 3. Celsius para Kelvin  
 4. Celsius para Fahrenheit  
 5. Fahrenheit para Celsius  
-6. Fahrenheit para Kelvin  
-0. Sair do programa
+6. Fahrenheit para Kelvin
 
 Com essas seis opções, você cobre praticamente todas as necessidades do dia a dia.
 
