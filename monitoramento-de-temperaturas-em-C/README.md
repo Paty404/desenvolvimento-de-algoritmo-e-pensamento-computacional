@@ -81,16 +81,6 @@ No projeto, optou-se por utilizar **uma combinação de `while` e `do...while`**
      
      ```
 
-## Questão Final de Reflexão
-
-**Por que você escolheu `while`, `do...while` ou uma combinação das duas estruturas? Em qual parte do algoritmo a diferença entre testar a condição antes ou depois da execução foi importante para sua solução?**
-
-A escolha de combinar as duas estruturas foi feita para aproveitar a característica específica de cada laço e deixar o código robusto:
-
-* O **`do...while`** foi fundamental para o **tratamento de entradas e validações**. A diferença de testar a condição *depois* da execução foi crucial aqui porque não faria sentido testar se um dado é válido antes mesmo do usuário ter a chance de digitá-lo pela primeira vez. A execução do bloco garante a leitura, e o teste posterior decide se a mensagem de erro deve ser mostrada e a leitura repetida.
-
-* Por outro lado, o **`while`** foi mais indicado para controlar o **ciclo principal de monitoramento**. A testagem da condição *antes* da execução garantiu que, no momento exato em que a terceira leitura crítica fosse registrada, o programa interrompesse o ciclo imediatamente, impedindo a solicitação desnecessária de uma nova temperatura e direcionando a aplicação para o relatório de emergência.
-
 ## 6. Testes realizados
 
 ### Teste 1: validação de entradas inválidas.
@@ -116,3 +106,12 @@ Com o limite configurado para $150.00^\circ\text{C}$, foram digitadas $3$ leitur
   * **Média das temperaturas:** $170.67^\circ\text{C}$
   * **Total de vezes que o limite foi ultrapassado:** $3$
 
+## Questão Final de Reflexão
+
+**Por que você escolheu `while`, `do...while` ou uma combinação das duas estruturas? Em qual parte do algoritmo a diferença entre testar a condição antes ou depois da execução foi importante para sua solução?**
+
+A escolha de combinar as duas estruturas foi feita para aproveitar a característica específica de cada laço e deixar o código robusto:
+
+* O **`do...while`** foi fundamental para o **tratamento de entradas e validações**. A diferença de testar a condição *depois* da execução foi crucial aqui porque não faria sentido testar se um dado é válido antes mesmo do usuário ter a chance de digitá-lo pela primeira vez. A execução do bloco garante a leitura, e o teste posterior decide se a mensagem de erro deve ser mostrada e a leitura repetida.
+
+* Por outro lado, o **`while`** foi mais indicado para controlar o **ciclo principal de monitoramento**. A testagem da condição *antes* da execução garantiu que, no momento exato em que a terceira leitura crítica fosse registrada, o programa interrompesse o ciclo imediatamente, impedindo a solicitação desnecessária de uma nova temperatura e direcionando a aplicação para o relatório de emergência.
