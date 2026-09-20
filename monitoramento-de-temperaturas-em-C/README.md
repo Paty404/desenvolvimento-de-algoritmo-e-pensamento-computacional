@@ -12,7 +12,7 @@
 
 ## 2. Objetivo
 
-O programa tem como objetivo simular o monitoramento em tempo real da temperatura de uma máquina industrial para prevenir danos severos por superaquecimento. Ele resolve o problema da falta de controle contínuo ao coletar medições, validar os dados de entrada contra falhas ou limites do sensor, registrar estatísticas gerais (média, maior e menor temperatura) e acionar uma parada de emergência automática quando identificar um risco eminente de falha térmica.
+O programa tem como objetivo simular o monitoramento em tempo real da temperatura de uma máquina industrial para prevenir danos severos por superaquecimento. Ele resolve o problema da falta de controle contínuo ao coletar medições, validar os dados de entrada contra falhas ou limites do sensor, registrar estatísticas gerais (média, maior e menor temperatura) e acionar uma parada de emergência automática quando identificar um risco de falha térmica.
 
 ## 3. Funcionamento do Programa
 
@@ -90,3 +90,29 @@ A escolha de combinar as duas estruturas foi feita para aproveitar a caracterís
 * O **`do...while`** foi fundamental para o **tratamento de entradas e validações**. A diferença de testar a condição *depois* da execução foi crucial aqui porque não faria sentido testar se um dado é válido antes mesmo do usuário ter a chance de digitá-lo pela primeira vez. A execução do bloco garante a leitura, e o teste posterior decide se a mensagem de erro deve ser mostrada e a leitura repetida.
 
 * Por outro lado, o **`while`** foi mais indicado para controlar o **ciclo principal de monitoramento**. A testagem da condição *antes* da execução garantiu que, no momento exato em que a terceira leitura crítica fosse registrada, o programa interrompesse o ciclo imediatamente, impedindo a solicitação desnecessária de uma nova temperatura e direcionando a aplicação para o relatório de emergência.
+
+## 6. Testes realizados
+
+### Teste 1: validação de entradas inválidas.
+
+No teste de validação de entradas inválidas foi digitado letras ao invés de números, e o programa imprimiu "Erro: Digite apenas numeros inteiros ou decimais!", e depois o programa continua rodando e pedindo para o usuário digitar um número.
+
+### Teste 2: temperaturas acima do limite, porém não consecutivas.
+
+Com o limite configurado para $100.00^\circ\text{C}$, foram inseridas leituras alternadas:
+  * $110^\circ\text{C}$ $\rightarrow$ Alerta exibido ($1/3$ consecutivas).
+  * $80^\circ\text{C}$ $\rightarrow$ Temperatura dentro do limite seguro (contagem resetada).
+  * $120^\circ\text{C}$ $\rightarrow$ Alerta exibido ($1/3$ consecutivas).
+  * $75^\circ\text{C}$ $\rightarrow$ Temperatura dentro do limite seguro (contagem resetada).
+  * $130^\circ\text{C}$ $\rightarrow$ Alerta exibido ($1/3$ consecutivas).
+  * O programa manteve o monitoramento ativo sem interromper a execução.
+
+### Teste 3: três temperaturas consecutivas acima do limite, provocando o encerramento automático.
+
+Com o limite configurado para $150.00^\circ\text{C}$, foram digitadas $3$ leituras seguidas acima do limite: $155^\circ\text{C}$ ($1/3$), $180^\circ\text{C}$ ($2/3$) e $177^\circ\text{C}$ ($3/3$). O sistema disparou a parada automática de emergência e imprimiu com precisão o **Relatório Final**:
+  * **Total de leituras válidas:** $3$
+  * **Maior temperatura registrada:** $180.00^\circ\text{C}$
+  * **Menor temperatura registrada:** $155.00^\circ\text{C}$
+  * **Média das temperaturas:** $170.67^\circ\text{C}$
+  * **Total de vezes que o limite foi ultrapassado:** $3$
+
